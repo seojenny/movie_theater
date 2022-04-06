@@ -4,8 +4,10 @@ By Jenny
 """
 #List to store user's choices
 userInfo=[]
+#main loop
 rebook = 'yes'
 while rebook=='yes':
+    #enter user's info
     name=input("what is your name :")
     userInfo.append(name)
     number=int(input("what is your phone number :"))
