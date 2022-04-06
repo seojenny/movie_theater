@@ -6,7 +6,10 @@ while True:
     userInfo.append(name)
     number=int(input("what is your phone number :"))
     userInfo.append(number)
+    movies = ("It", "The nun", "antman", "spiderman")
+    print(movies)
     movieName=input("What moive you want to watch : ")
+    while movie is not in movies,
     userInfo.append(movieName)
     movieTime=input("What time you wanna watch movie?(morning, lunch, afternoon):")
     userInfo.append(movieTime)
