@@ -16,4 +16,3 @@ while True:
     if checkPrint=="Yes":
           print(userInfo)
     if checkPrint=="No":
- 
