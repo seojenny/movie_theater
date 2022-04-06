@@ -7,9 +7,11 @@ while True:
     number=int(input("what is your phone number :"))
     userInfo.append(number)
     movies = ("It", "The nun", "antman", "spiderman")
-    print(movies)
+    for movie in movies:
+        print(movie)
+    
     movieName=input("What moive you want to watch : ")
-    while movie is not in movies,
+        
     userInfo.append(movieName)
     movieTime=input("What time you wanna watch movie?(morning, lunch, afternoon):")
     userInfo.append(movieTime)
@@ -18,4 +20,3 @@ while True:
     checkPrint=input("You want to see your INFO? Yes/No:")
     if checkPrint=="Yes":
           print(userInfo)
-    if checkPrint=="No":
