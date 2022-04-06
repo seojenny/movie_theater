@@ -20,3 +20,5 @@ while True:
     checkPrint=input("You want to see your INFO? Yes/No:")
     if checkPrint=="Yes":
           print(userInfo)
+          print('Thank You')
+          break
