@@ -63,7 +63,7 @@ def movie_seat(chosen_movie, chosen_time):
              #if the user wants it returns the program
                choose_again = None
                choose_again = input("do you want to book a seat again?(yes/no): ")
-               if choose_Again == 'n':
+               if choose_again == 'no':
                     print("thank you")
                     break
            return booked seats
