@@ -4,9 +4,7 @@ By Jenny
 """
 #List to store user's choices
 userInfo=[]
-#main loop
-rebook = 'yes'
-while rebook=='yes':
+def movie_ticket():
     #enter user's info
     name=input("what is your name :")
     userInfo.append(name)
@@ -28,7 +26,12 @@ while rebook=='yes':
         movieTime=(input("When do you wanna watch movie?(morning, lunch, afternoon):")).lower()
     
     print(f"name: {name}, number: {number}, movie: {movie}, time: {movieTime}")
-    
+
+#main loop
+rebook = 'yes'
+while rebook=='yes':
+    #call movie_ticket()
+    movie_ticket()
     #ask information correction
     answer = None
     while answer not in ('yes', 'no'):
@@ -43,3 +46,4 @@ while rebook=='yes':
                     rebook=(input("would you like to book again?")).lower()
                 if rebook== 'no':
                     print('see you next time!')
+    break
