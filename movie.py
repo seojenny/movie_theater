@@ -36,20 +36,21 @@ movie_seats = {{[], [], []}, {[], [], []}, {[], [], []}}
 #for morning It
 def movie_seat(chosen_movie, chosen_time):
     booked_seats=[]
-    while True:
-        movie_index = movies.index(chosen_movie)
-        time_index = times.index(chosen_time)
-          #print seats and check if seat is already booked
-        seats_tct = ''
-        for seat_n in range(1,11):
-            if seat_n in movie_seats[movie_index][time_index]:
-                    seats_txt = seats_txt + 'x'
-            else:
-                    seats_txt = seats_txt + f' {seat_n}'
-               
-        print (seats_txt)
-          #asks for seat and appends it into booked_seats
-        chosen_seat = None
+    
+    movie_index = movieName.index(chosen_movie)
+    time_index = movieTime.index(chosen_time)
+    #print seats and check if seat is already booked
+    seats_txt = ''
+    for seat_n in range(1,11):
+        if seat_n in movie_seats[movie_index][time_index]:
+                seats_txt = seats_txt + ' x'
+        else:
+                seats_txt = seats_txt + f' { seat_n}'
+            
+    print (seats_txt)
+        #asks for seat and appends it into booked_seats
+    chosen_seat = None
+
     while chosen_seat not in range(1,11):
         #validate that while not chosen_seat.isnumber():
         chosen_seat = int(input("what seat do you want?"))
